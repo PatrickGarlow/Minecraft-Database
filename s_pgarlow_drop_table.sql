@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS Block,Tool,Tool_Enchantment,Enchantment,Tool_Information,Item;
