@@ -1,6 +1,6 @@
 # Minecraft SQL Database
 # Description
-For a course project I created a database for minecraft. This included various blocks, items, tools, and enchantments that all have relations with eachother. This is just a sampling of the games content as a proof of concept. Not everything from the game is included and some of the values for enchanting are not exact.
+As a course project I created a database for minecraft. This included various blocks, items, tools, and enchantments that all have relations with eachother. This is just a sampling of the games content as a proof of concept. Not everything from the game is included and some of the values for enchanting are not exact.
 # Usage
 Download all the files and place them into the same folder.
 Log into a DBMS and input "source s+pgarlow.sql".
