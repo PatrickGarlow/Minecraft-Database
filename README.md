@@ -1,11 +1,11 @@
 # Minecraft SQL Database
-# Description
+## Description
 As a course project I created a database for minecraft. This included various blocks, items, tools, and enchantments that all have relations with eachother. This is just a sampling of the games content as a proof of concept. Not everything from the game is included and some of the values for enchanting are not exact.
-# Usage
+## Usage
 Download all the files and place them into the same folder.
 Log into a DBMS and input "source s+pgarlow.sql".
 Copy and paste the Queries provided and hit enter.
-# Queries
+## Queries
 **What is the name of the efficient tool for stone:**<br />
 SELECT p.Tool_Name FROM Tool p WHERE p.Tool_ID IN(SELECT tp.Effective_Tool FROM Block tp WHERE p.Tool_ID = tp.Effective_Tool AND tp.Name='Stone');
 
@@ -20,11 +20,11 @@ Select t.Tool_Name From Tool t Where t.Speed>1 And t.Durability>150;
 
 **List the names of all items that are not Tools and have a stack size of 64:**<br />
 Select i.Name From Item i Where i.Item_ID Not In(Select t.Item_ID From Tool t) and i.Stack_Size = 64;
-# Database Design
+## Database Design
 ![Image of Design](https://github.com/PatrickGarlow/Minecraft-Database/blob/master/Minecraft_Database_Diagram.PNG)
-# Project Status
+## Project Status
 This project has been completed.
-# References
+## References
 Data was taken from the following sites:<br />
 https://minecraft.gamepedia.com/Enchanting<br />
 https://minecraft.gamepedia.com/Item<br />
